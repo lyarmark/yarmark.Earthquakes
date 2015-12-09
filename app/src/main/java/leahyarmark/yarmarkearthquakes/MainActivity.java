@@ -29,30 +29,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EarthquakeAsyncTask task = new EarthquakeAsyncTask(earthquakes);
+        EarthquakeAsyncTask task = new EarthquakeAsyncTask();
         task.execute();
-
-
-
-
-
-
-
-
-
-
 
         recyclerView = (RecyclerView) findViewById(R.id.list);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
-
-        GsonBuilder builder = new GsonBuilder();
-        Gson gson = builder.create();
-
-
-
-        earthquakes = gson.fromJson(new InputStreamReader(in), Earthquake[].class);
 
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(earthquakes);
         recyclerView.setAdapter(adapter);
