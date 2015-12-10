@@ -11,10 +11,12 @@ public class EarthquakeViewHolder extends RecyclerView.ViewHolder {
     private TextView name;
 
     public EarthquakeViewHolder(View itemView) {
+
         super(itemView);
+        name = (TextView) itemView.findViewById(R.id.list);
     }
 
-    public void bind(Earthquake earthquake, int index) {
-        name.setText(earthquake.getPlace(index));
+    public void bind(Feature feature) {
+        name.setText(feature.getProperties().getTitle());
     }
 }

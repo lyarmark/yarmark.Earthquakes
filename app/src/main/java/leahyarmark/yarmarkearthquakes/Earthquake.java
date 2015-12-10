@@ -1,16 +1,9 @@
 package leahyarmark.yarmarkearthquakes;
 
-import java.io.Serializable;
-import java.util.ArrayList;
+public class Earthquake{
+   private Feature[] features;
 
-
-/**
- * Created by student1 on 12/3/2015.
- */
-public class Earthquake implements Serializable {
-    private Features[] feature;
-
-    public String getPlace(int i) {
-        return feature[i].getPlace();
+   public Feature[] getFeatures(){
+        return features;
     }
 }
