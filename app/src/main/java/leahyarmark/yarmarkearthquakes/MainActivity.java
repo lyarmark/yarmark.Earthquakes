@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         recyclerView = (RecyclerView) findViewById(R.id.list);
-         recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setLayoutManager(layoutManager);
 
         EarthquakeAsyncTask task = new EarthquakeAsyncTask(recyclerView);
         task.execute();

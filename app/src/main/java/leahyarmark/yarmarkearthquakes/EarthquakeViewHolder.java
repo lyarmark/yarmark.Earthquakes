@@ -17,6 +17,6 @@ public class EarthquakeViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void bind(Feature feature) {
-        name.setText(feature.getProperties().getTitle());
+        this.name.setText(feature.getProperties().getTitle());
     }
 }
