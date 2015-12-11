@@ -20,7 +20,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<EarthquakeViewHold
             ViewGroup viewGroup, int i) {
         View earthquakeView = LayoutInflater
                 .from(viewGroup.getContext())
-                .inflate(R.layout.activity_main, viewGroup, false);
+                .inflate(R.layout.list_view, viewGroup, false);
         return new EarthquakeViewHolder(earthquakeView);
     }
 

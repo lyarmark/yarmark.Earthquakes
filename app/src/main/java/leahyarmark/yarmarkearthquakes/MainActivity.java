@@ -10,7 +10,6 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity {
     //http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php
     private RecyclerView recyclerView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
